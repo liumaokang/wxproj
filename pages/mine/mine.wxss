@@ -1,0 +1,144 @@
+/**index.wxss**/
+@import "../../iconfont.wxss";
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding:100rpx 0;
+  box-sizing: border-box;
+  background-color: green;
+  position: relative;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #fff;
+}
+.container .btn{
+  position: absolute;
+  right: 20rpx;
+  bottom:20rpx;
+}
+.container .btn .btn-cli{
+  display: block;
+  width: 86rpx;
+  line-height: 43rpx;
+  font-size: 30rpx;
+  text-align: center;
+  color: #fff;
+  background: none;
+  border: 1px solid #fff;
+}
+.container .btn>view:nth-child(2){
+  position: absolute;
+  top: 0;
+  left: -20rpx;
+  width: 100rpx;
+  color: #fff;
+}
+.mine{
+  padding: 20rpx;
+}
+.mine .title{
+  display: flex;
+  justify-content: space-between;
+}
+.mine .title>view:nth-child(1){
+  font-size: 36rpx;
+}
+.mine .title>view:nth-child(2)>text:nth-child(1){
+  padding-right: 10rpx;
+  font-size: 28rpx;
+  color: #888;
+}
+.mine .title>view:nth-child(2)>text:nth-child(2){
+  font-size: 36rpx;
+  color: #aaa;
+}
+.wrap{
+  overflow: hidden;
+  margin-top: 40rpx;
+}
+.wrap .video{
+  float: left;
+  font-size: 80rpx;
+  margin-top: 18rpx;
+  color: #108bff;
+  font-weight:600;
+}
+.wrap1 .video{
+  color: #65ff77;
+}
+.wrap2 .video{
+  color: #ffce2d;
+}
+.map{
+  border-bottom: 2px solid #ddd;
+  overflow: hidden;
+  padding-bottom: 40rpx;
+}
+.map .analyse{
+  float: left;
+  margin-left: 20rpx;
+}
+.map .analyse>text:nth-child(1){
+  font-size: 30rpx;
+  color: #333;
+  line-height: 40rpx;
+}
+.map .analyse>view:nth-child(2){
+  font-size: 24rpx;
+  color: #00f;
+  line-height: 40rpx;
+}
+.map .analyse>view:nth-child(2)>text:nth-child(1){
+  font-size: 40rpx;
+  padding-right: 5rpx;
+}
+.wrap1 .map .analyse>view:nth-child(2){
+  color: #65ff77;
+}
+.wrap2 .map .analyse>view:nth-child(2){
+  color: #ffce2d;
+}
+.map .txt{
+  float: left;
+  margin-left: 110rpx ;
+}
+.map .txt>text{
+  display: block;
+  font-size: 24rpx;
+  color: #666;
+  line-height: 50rpx;
+}
+.begin{
+  float: right;
+  margin-top: 20rpx;
+}
+.begin view{
+  display: inline-block;
+  margin-left: 20rpx;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  font-weight:500;
+}
+.begin>view:nth-child(1){
+  line-height: 40rpx;
+  width: 120rpx;
+  background-color: #eee;
+  border-radius: 5rpx;
+  text-align: center;
+  font-size: #000;
+}

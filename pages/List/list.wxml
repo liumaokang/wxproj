@@ -1,0 +1,81 @@
+<!--pages/List/list.wxml-->
+<view class="list">
+    <view class="movie-list">
+        <view class="list-images">
+            <image src="../../images/list1.jpg"></image>
+            <image src="../../images/list2.jpg"></image>
+            <image src="../../images/list3.jpg"></image>
+        </view>
+    </view>
+    <view class="list-movie">
+        <image src="../../images/a.jpg" class="imgs"></image>
+        <view class="left">
+            <view>
+                <text>1.肖申克的救赎 9.6分</text>
+            </view>
+            <view>
+                <text>2.霸王别姬 9.6分</text>
+            </view>
+            <view>
+                <text>3.杀手不太冷 9.6分</text>
+            </view>
+        </view>
+    </view>
+    <view class="list-movie">
+        <image src="../../images/b.jpg" class="imgs"></image>
+        <view class="left">
+            <view>
+                <text>1.肖申克的救赎 9.6分</text>
+            </view>
+            <view>
+                <text>2.霸王别姬 9.6分</text>
+            </view>
+            <view>
+                <text>3.杀手不太冷 9.6分</text>
+            </view>
+        </view>
+    </view>
+    <view class="list-movie">
+        <image src="../../images/c.jpg" class="imgs"></image>
+        <view class="left">
+            <view>
+                <text>1.肖申克的救赎 9.6分</text>
+            </view>
+            <view>
+                <text>2.霸王别姬 9.6分</text>
+            </view>
+            <view>
+                <text>3.杀手不太冷 9.6分</text>
+            </view>
+        </view>
+    </view>
+    <view class="list-movie">
+        <image src="../../images/d.jpg" class="imgs"></image>
+        <view class="left">
+            <view>
+                <text>1.肖申克的救赎 9.6分</text>
+            </view>
+            <view>
+                <text>2.霸王别姬 9.6分</text>
+            </view>
+            <view>
+                <text>3.杀手不太冷 9.6分</text>
+            </view>
+        </view>
+    </view>
+    <view class="list-movie">
+        <image src="../../images/e.jpg" class="imgs"></image>
+        <view class="left">
+            <view>
+                <text>1.肖申克的救赎 9.6分</text>
+            </view>
+            <view>
+                <text>2.霸王别姬 9.6分</text>
+            </view>
+            <view>
+                <text>3.杀手不太冷 9.6分</text>
+            </view>
+        </view>
+    </view>
+
+</view>

@@ -1,0 +1,69 @@
+<import src="/pages/template/stars/stars" />
+<view class="home">
+    <view class="ser"  bindtap="semo">
+        <text class="iconfont icon-sousuo">搜索</text>
+    </view>
+</view>
+<view class="movie_hot">
+    <view class="movie_title">
+        <text>影院热映</text>
+        <view bindtap="more" data-title="影院热映">查看更多<text class="iconfont icon-youjiantou"></text></view>
+    </view>
+    <scroll-view scroll-x >
+        <view class="list">
+            <view class="movieList" wx:for="{{movielist}}"  wx:key="{{index}}">
+                <view class="img" bindtap="jump" data-id="{{item.id}}"><image src="{{item.images.large}}"></image></view>
+                <view class="title">{{item.title}}</view>
+                <view class="stars">
+                    <view>
+                        <template is="stars" data="{{item}}"></template>
+                        <view class="score"><text>{{item.rating.average}}</text></view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+
+</view>
+<view class="movie_hot">
+    <view class="movie_title">
+        <text>豆瓣热门</text>
+        <view bindtap="more" data-title="豆瓣热门">查看更多<text class="iconfont icon-youjiantou"></text></view>
+    </view>
+    <scroll-view scroll-x >
+        <view class="list">
+            <view class="movieList" wx:for="{{hotlist}}" wx:key="{{index}}">
+                <view class="img" bindtap="jump" data-id="{{item.id}}"><image src="{{item.images.large}}"></image></view>
+                <view class="title">{{item.title}}</view>
+                <view class="stars">
+                   <view>
+                       <template is="stars" data="{{item}}"></template>
+                       <view class="score"><text>{{item.rating.average}}</text></view>
+                   </view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+
+</view>
+<view class="movie_hot">
+    <view class="movie_title">
+        <text>top250</text>
+        <view bindtap="more" data-title="top250">查看更多<text class="iconfont icon-youjiantou"></text></view>
+    </view>
+    <scroll-view scroll-x >
+        <view class="list">
+            <view class="movieList" wx:for="{{happylist}}" wx:key="{{index}}">
+                <view class="img" bindtap="jump" data-id="{{item.id}}"><image src="{{item.images.large}}"></image></view>
+                <view class="title">{{item.title}}</view>
+                <view class="stars">
+                    <view>
+                        <template is="stars" data="{{item}}"></template>
+                        <view class="score"><text>{{item.rating.average}}</text></view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+
+</view>

@@ -1,0 +1,74 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="btn">
+    <text class="btn-cli">退出</text>
+    <view>→</view>
+  </view>
+</view>
+<view class="mine">
+  <view class="title">
+    <view>我的书影音</view>
+    <view>
+      <text>全部</text>
+      <text class="iconfont icon-youjiantou"></text>
+    </view>
+  </view>
+  <view class="wrap">
+      <view class="video iconfont icon-video"></view>
+      <view class="map">
+        <view class="analyse">
+          <text>观影分析</text>
+          <view><text>0</text>看过</view>
+        </view>
+        <view class="txt">
+           <text>标记10部影片</text>
+          <text>开启观影分析</text>
+        </view>
+        <view class="begin">
+          <view>立即开始</view>
+          <view class="iconfont icon-youjiantou"></view>
+        </view>
+      </view>
+  </view>
+  <view class="wrap wrap1">
+    <view class="video iconfont icon-1"></view>
+    <view class="map">
+      <view class="analyse">
+        <text>读书分析</text>
+        <view><text>0</text>读过</view>
+      </view>
+      <view class="txt">
+        <text>标记10本书</text>
+        <text>开启读书分析</text>
+      </view>
+      <view class="begin">
+        <view>立即开始</view>
+        <view class="iconfont icon-youjiantou"></view>
+      </view>
+    </view>
+  </view>
+  <view class="wrap wrap2">
+    <view class="video iconfont icon-yinle"></view>
+    <view class="map">
+      <view class="analyse">
+        <text>音乐分析</text>
+        <view><text>0</text>听过</view>
+      </view>
+      <view class="txt">
+        <text>标记10本唱片</text>
+        <text>开启音乐分析</text>
+      </view>
+      <view class="begin">
+        <view>立即开始</view>
+        <view class="iconfont icon-youjiantou"></view>
+      </view>
+    </view>
+  </view>
+</view>

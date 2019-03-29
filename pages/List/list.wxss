@@ -1,0 +1,40 @@
+/* pages/List/list.wxss */
+.list{
+    padding: 36rpx;
+}
+.list .list-images{
+    width: 100%;
+}
+.list .list-images image{
+    width: 100%;
+    height: 300rpx;
+    margin-bottom: 40rpx;
+    border-radius: 40rpx;
+}
+.list-movie{
+    width: 100%;
+    height: 200rpx;
+    margin-bottom: 20rpx;
+}
+.imgs{
+    float: left;
+    width: 200rpx;
+    height: 200rpx;
+}
+.list-movie .left{
+    float: left;
+    height: 150rpx;
+    padding-left: 20rpx;
+    margin-top: 25rpx;
+    width: 66%;
+    border: 2px solid #ddd;
+    border-bottom-right-radius: 20rpx;
+    border-top-right-radius: 20rpx;
+    /*border-radius: 20rpx;*/
+    border-left: none;
+}
+.list-movie .left text{
+    font-size: 24rpx;
+    line-height: 30rpx;
+    color: #666;
+}

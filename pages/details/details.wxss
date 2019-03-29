@@ -1,0 +1,169 @@
+/* pages/details/details.wxss */
+@import  "../template/stars/stars.wxss";
+.details{
+    /*margin: 0 36rpx;*/
+    display: flex;
+    padding: 36rpx;
+    justify-content: space-between;
+}
+.details_img image {
+    width: 200rpx;
+    height: 300rpx;
+}
+.right{
+    margin-left: 40rpx;
+}
+.details .right{
+    width: 678rpx;
+}
+.details .title{
+    line-height: 72rpx;
+    font-size: 40rpx;
+    color: #333;
+}
+.details, .introduce ,.wantlook ,.looked{
+    color: #666;
+    font-size: 28rpx;
+    line-height:50rpx;
+}
+.title2{
+    font-size:24rpx;
+    line-height: 40rpx;
+}
+.button{
+    line-height: 60rpx;
+    margin-top: 20rpx;
+}
+.wantlook, .looked{
+    width:150rpx;
+    line-height:60rpx;
+    text-align: center;
+    border: 1px solid #eee;
+    background-color: #eee;
+    margin-right: 20rpx;
+    box-shadow: 1px 1px  5px rgba(0,0,0,0.5);
+    float: left;
+}
+.score{
+    width:90%;
+    background-color: #eee;
+    margin: 36rpx;
+    margin: auto;
+    border-radius: 20rpx;
+}
+.score view:nth-child(2) image{
+    width: 24rpx;
+    height: 24rpx;
+}
+.score .star{
+    font-size: 24rpx;
+    color: #666;
+}
+.left-star>view{
+    overflow: hidden;
+}
+.left-star>view>view{
+    float: left;
+}
+.summry{
+    padding: 30rpx;
+    color: #666;
+}
+.summry .summry-intro{
+    margin-top: 30rpx;
+}
+.summry .art{
+    font-size: 24rpx;
+    margin-top: 30rpx;
+
+}
+.summry .art>text{
+    height:60rpx;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.sho{
+    height: 128rpx;
+}
+.hid{
+    height: 60rpx;
+}
+.summry .open{
+    text-align: right;
+    line-height: 60rpx;
+    color: #666;
+    font-size: 24rpx;
+}
+.hide{
+    display: none;
+}
+.shw{
+    display: block;
+}
+.left-mar{
+    margin-left:50rpx;
+}
+.perso{
+    padding: 36rpx;
+    margin-top: 36rpx;
+}
+.perso .tit{
+    line-height: 60rpx;
+    font-size: 28rpx;
+    font-weight: bold;
+    color: #000;
+}
+.perso .pho>view{
+    width: 150rpx;
+    margin-right: 20rpx;
+    white-space: nowrap;
+    display: inline-block;
+}
+.perso .pho,.still .pho{
+    white-space: nowrap;
+}
+.perso .pho>view image{
+    height: 214rpx;
+    width: 100%;
+}
+.perso .pho .text,.perso .pho .identity{
+    line-height: 30rpx;
+    text-align: center;
+    font-size: 24rpx;
+}
+.perso .pho .text{
+    color: #333;
+}
+.perso .pho .identity{
+    color: #666;
+}
+.still{
+    padding: 30rpx;
+}
+.still-title{
+    display: flex;
+    justify-content: space-between;
+}
+.still-title text:nth-child(1){
+    font-size: 28rpx;
+    font-weight: bold;
+    color: #333;
+}
+.still-title text:nth-child(2){
+    color: #666;
+    font-size: 24rpx;
+}
+.still .pho{
+    margin-top: 20rpx;
+}
+.still .pho>view{
+    width: 362rpx;
+    display: inline-block;
+    margin-right: 20rpx;
+}
+.still .pho>view image{
+    height: 240rpx;
+    width: 100%;
+}
+

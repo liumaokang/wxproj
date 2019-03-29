@@ -1,0 +1,76 @@
+/* pages/home/home.wxss */
+@import "../../iconfont.wxss";
+.home{
+   background-color: #2aa515; 
+   padding: 20rpx 40rpx;
+}
+.home .ser{
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10rpx; 
+}
+.home .ser text{
+   font-size: 24rpx; 
+   color:#555;
+   line-height: 60rpx;
+}
+.movie_hot .movie_title{
+    line-height: 100rpx;
+    display: flex;
+    justify-content: space-between;
+}
+.movie_hot .movie_title text:nth-child(1){
+    padding-left: 36rpx;
+    font-size: 36rpx;
+    font-weight: bold;
+}
+.movie_hot .movie_title view:nth-child(2){
+    color: #42bd56;
+    font-size: 32rpx;
+}
+.movie_hot .movie_title view:nth-child(2) text{
+    padding-right:32rpx;
+    color: #42bd56;
+    padding-left: 0;
+}
+.list{
+    width: 670rpx;
+    padding: 20rpx 0;
+    margin: auto;
+    white-space: nowrap;
+}
+.movieList{
+    margin-right: 16rpx;
+    width: 200rpx;
+    display: inline-block;
+}
+.movieList .img{
+    width: 200rpx;
+}
+.movieList .img image{
+    width: 200rpx;
+    height: 284rpx;
+}
+.movieList .title{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 28rpx;
+    font-size: 28rpx;
+}
+.movieList .score{
+    font-size: 24rpx;
+    display: inline-block;
+    margin-left: 20rpx;
+}
+.movieList .stars image{
+    width: 20rpx;
+    height: 20rpx;
+    line-height: 28rpx;
+}
+.movieList .stars view{
+    float: left;
+    vertical-align: bottom;
+    line-height: 36rpx;
+}
+

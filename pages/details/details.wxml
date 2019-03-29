@@ -1,0 +1,78 @@
+<import src="/pages/template/stars/stars" />
+<view class="details">
+    <view class="details_img">
+        <image src="{{imgs}}"></image>
+    </view>
+    <view class="right">
+        <view class="title">{{title}}（{{year}}）</view>
+        <view class="title2">{{title}}</view>
+        <view class="introduce">{{countries}}/{{genres}}</view>
+        <view  class="button">
+            <view class="wantlook">想看</view>
+            <view class="looked">看过</view>
+        </view>
+    </view>
+</view>
+<view class="score">
+    <view>
+        <text class="star">豆瓣评分<sub>Tm</sub> </text>
+        <text class="iconfont icon-youjiantou"></text>
+    </view>
+    <view class="left-fl">
+        <view class="left-mar">
+            <view class="left-star">
+                <view class="score"><text>{{item.rating.average}}</text></view>
+                <template is="stars" data="{{item}}"></template>
+            </view>
+        </view>
+        <view class="right-ri">
+        </view>
+    </view>
+</view>
+<view class="summry">
+    <view class="summry-intro">简介</view>
+    <view class="art">
+        <text wx:if="{{isFolded}}"  class="{{sho}}">{{summary}}</text>
+        <view class="open">
+            <text bindtap="change" >{{isFolded?'展开':'收起'}}</text>
+        </view>
+    </view>
+</view>
+<view class="perso">
+    <view class="tit">影人</view>
+    <scroll-view scroll-x="true">
+        <view class="pho">
+            <view wx:for="{{actor}}" wx:key="{{index}}">
+                <image src="{{item.avatars.large}}"></image>
+                <view class="text">{{item.name}}</view>
+                <view class="identity">导演</view>
+            </view>
+        </view>
+    </scroll-view>
+</view>
+<view class="still">
+    <view class="still-title">
+        <text>预告片/剧照</text>
+        <text>全部114</text>
+    </view>
+    <scroll-view scroll-x="true">
+        <view class="pho">
+            <view>
+                <image src="https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p31663.jpg"></image>
+            </view>
+            <view>
+                <image src="https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p31663.jpg"></image>
+            </view>
+            <view>
+                <image src="https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p31663.jpg"></image>
+            </view>
+            <view>
+                <image src="https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p44818.jpg"></image>
+            </view>
+            <view>
+                <image src="https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p31663.jpg"></image>
+            </view>
+        </view>
+    </scroll-view>
+
+</view>

@@ -1,0 +1,27 @@
+<import src="/pages/template/stars/stars" />
+<view class="more">
+    <view wx:for="{{movielist}}" wx:key="{{index}}">
+        <image src="{{item.images.large}}"></image>
+        <view>{{item.title}}</view>
+        <view class="stars">
+            <template is="stars" data="{{item}}"></template>
+            <view class="score"><text>{{item.rating.average}}</text></view>
+        </view>
+    </view>
+    <view wx:for="{{coming_soon}}" wx:key="{{index}}">
+        <image src="{{item.images.large}}"></image>
+        <view>{{item.title}}</view>
+        <view class="stars">
+            <template is="stars" data="{{item}}"></template>
+            <view class="score"><text>{{item.rating.average}}</text></view>
+        </view>
+    </view>
+    <view wx:for="{{top}}" wx:key="{{index}}">
+        <image src="{{item.images.large}}"></image>
+        <view>{{item.title}}</view>
+        <view class="stars">
+            <template is="stars" data="{{item}}"></template>
+            <view class="score"><text>{{item.rating.average}}</text></view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,36 @@
+<import src="/pages/template/stars/stars" />
+<view class="search">
+    <view class="ser">
+        <input placeholder="搜索" placeholder-class="color" bindinput="ser"/>
+    </view>
+</view>
+<view class="main">
+    <view class="mo-name" wx:for="{{sermovies}}" wx:for-item="movie" wx:key="{{index}}">
+        <view class="img"><image src="{{movie.images.large}}"></image></view>
+        <view class="txt">
+            <view class="title">{{movie.title}}</view>
+            <view class="stars">
+                <view>
+                    <template is="stars-soso" data="{{movie}}"></template>
+                    <view class="score"><text>{{movie.rating.average}}</text></view>
+                </view>
+            </view>
+            <view class="detail">
+                <text>上映日期:{{movie.year}}年</text>
+                <view class="mov">
+                    <view style="float: left">国家:</view>
+                    <view wx:for="{{movie.countries}}"  wx:key="{{index}}">{{item}}</view>
+                </view>
+                <view class="mov">
+                    <view style="float: left">电影类型:</view>
+                    <view wx:for="{{movie.genres}}"  wx:key="{{index}}">{{item}}</view>
+                </view>
+                <view wx:for="{{movie.directors}}"  wx:key="{{index}}">导演:{{item.name}}</view>
+                <view class="mov">
+                    <view style="float: left">演员:</view>
+                    <view wx:for="{{movie.casts}}"  wx:key="{{index}}">{{item.name}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,41 @@
+.more{
+    padding:53rpx;
+}
+.more>view{
+    width:200rpx;
+    float:left;
+    margin-right:22rpx;
+    margin-bottom:22rpx;
+}
+.more>view:nth-child(3n){
+    margin-right:0px;
+}
+.more>view image{
+    width:100%;
+    height:284rpx;
+}
+.more>view>view:nth-child(2){
+    font-size:24rpx;
+    color:#333;
+    text-align:center;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+    line-height:30rpx;
+}
+.more .stars{
+     line-height:24rpx;
+}
+.more .stars>view:nth-child(1)>view{
+    width:24rpx;
+     float:left;
+}
+.more .stars>view:nth-child(1)>view image{
+     width:100%;
+     height:24rpx;
+
+}
+.more .stars>view:nth-child(2){
+    font-size:24rpx;
+    float:left
+}

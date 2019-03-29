@@ -1,0 +1,19 @@
+<!--pages/template/stars/stars.wxml-->
+<template name="stars" >
+    <view>
+        <view wx:for="{{[1,2,3,4,5]}}" wx:key="{{index}}" wx:for-item="option">
+            <image wx:if="{{item.rating.stars / 10 >= index + 1}}" src="../../images/star2.png" ></image>
+            <image wx:elif="{{item.rating.stars/10 >= index && item.rating.stars % 10 !=0}}" src="../../images/star1.png" ></image>
+            <image wx:else src="../../images/star3.png" ></image>
+        </view>
+    </view>
+</template>
+<template name="stars-soso" >
+    <view>
+        <view wx:for="{{[1,2,3,4,5]}}" wx:key="{{index}}" wx:for-item="option">
+            <image wx:if="{{movie.rating.stars / 10 >= index + 1}}" src="../../images/star2.png" ></image>
+            <image wx:elif="{{movie.rating.stars/10 >= index && movie.rating.stars % 10 !=0}}" src="../../images/star1.png" ></image>
+            <image wx:else src="../../images/star3.png" ></image>
+        </view>
+    </view>
+</template>
